@@ -23,6 +23,13 @@ result := engine.NLP.Workflow("Linguo was a grammar-correcting robot created by 
 ...
 ```
 
+Note: Linguo uses [MITIE](https://github.com/mit-nlp/MITIE) for entity extraction, so be sure to have it installed. On MacOS you can just install it with Homebrew:
+
+```
+$ brew install mitie
+```
+
+
 TBC
 
 ## Examples
