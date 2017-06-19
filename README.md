@@ -4,7 +4,7 @@
 
 Linguo is a Go [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) library.
 
-Linguo is based on [go-freeling](https://github.com/advancedlogic/go-freeling), which is a port of [Freeling](http://nlp.lsi.upc.edu/freeling/).
+Linguo is based on [go-freeling](https://github.com/advancedlogic/go-freeling), which is a port of [Freeling](http://nlp.lsi.upc.edu/freeling/). Linguo started as an attempt to clean up and improve go-freeling, adding more features on top of it.
 
 This is still a WIP and more documentation will follow.
 
