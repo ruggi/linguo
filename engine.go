@@ -2,13 +2,11 @@ package linguo
 
 import (
 	"sync"
-
-	"github.com/federicoruggi/linguo/nlp"
 )
 
 type Engine struct {
 	semaphore *sync.Mutex
-	NLP       *nlp.NLPEngine
+	NLP       *NLPEngine
 	Ready     bool
 }
 
@@ -28,21 +26,21 @@ func (e *Engine) InitNLP(path, lang string) {
 	}
 
 	options := e.makeOptions(path, lang)
-	nlpEngine := nlp.NewNLPEngine(options)
+	nlpEngine := NewNLPEngine(options)
 
 	e.NLP = nlpEngine
 	e.Ready = true
 }
 
-func (e *Engine) makeOptions(path, lang string) *nlp.NLPOptions {
-	macoOptions := nlp.NewMacoOptions(path, lang).
+func (e *Engine) makeOptions(path, lang string) *NLPOptions {
+	macoOptions := NewMacoOptions(path, lang).
 		PunctuationFilePath("/common/punct.dat").
 		DictionaryFilePath("/" + lang + "/dicc.src").
 		LocutionsFilePath("/" + lang + "/locucions-extended.dat").
 		NPdataFilePath("/" + lang + "/np.dat").
 		ProbabilityFilePath("/" + lang + "/probabilitats.dat")
 
-	return nlp.NewNLPOptions(path, lang).
+	return NewNLPOptions(path, lang).
 		TokenizerFilePath("/tokenizer.dat").
 		SplitterFilePath("/splitter.dat").
 		TaggerFilePath("/tagger.dat").

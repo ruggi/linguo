@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/federicoruggi/linguo"
+	"github.com/reifcode/linguo"
 )
 
 func main() {
