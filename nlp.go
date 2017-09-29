@@ -5,7 +5,7 @@ import (
 
 	set "gopkg.in/fatih/set.v0"
 
-	"github.com/reifcode/linguo/models"
+	"github.com/ruggi/linguo/models"
 )
 
 type NLPEngine struct {

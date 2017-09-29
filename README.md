@@ -10,10 +10,10 @@ This is still a WIP and more documentation will follow.
 
 ## Usage
 
-`go get -u github.com/reifcode/linguo`
+`go get -u github.com/ruggi/linguo`
 
 ```
-import "github.com/reifcode/linguo"
+import "github.com/ruggi/linguo"
 
 ...
 

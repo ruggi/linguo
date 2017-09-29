@@ -71,7 +71,7 @@ import (
 	"unsafe"
 
 	"github.com/abiosoft/semaphore"
-	"github.com/reifcode/linguo/models"
+	"github.com/ruggi/linguo/models"
 	set "gopkg.in/fatih/set.v0"
 )
 
